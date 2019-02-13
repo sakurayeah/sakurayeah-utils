@@ -1,0 +1,33 @@
+{
+  "name": "sakurayeah-utils",
+  "version": "0.0.2",
+  "description": "使用webpack打包的一个js库，上传到npm",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.config.js --content-base examples --inline --hot",
+    "build": "webpack --config webpack.prd.config.js -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sakurayeah/sakurayeah-utils.git"
+  },
+  "author": "sakurayeah <katrina136@163.com>",
+  "keywords": [
+    "webpack",
+    "url"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakurayeah/sakurayeah-utils/issues"
+  },
+  "homepage": "https://github.com/sakurayeah/sakurayeah-utils/blob/master/readme.md",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
